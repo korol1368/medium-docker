@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:15.2-alpine
+    container_name: 'medium'
+    environment:
+      POSTGRES_DB: 'medium'
+      POSTGRES_USER: 'admin'
+      POSTGRES_PASSWORD: 'root'
+    ports:
+      - '5432:5432'
